@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-객체만들기</title>
+    <script>
+        //객체는 데이터(값,배열) 와 함수의 집합체를 뜻한다.
+        var person = {
+            name :"홍길동",
+            age:18,
+            gender:"man",
+            family:{
+                "mon":"월매",
+                "father":"홍판사"
+            },
+            hobby:["책읽기","영화감상"],
+            // comment:function(){
+            //     console.log("도둑잡기~~~")
+            // }
+            comment:() => {
+                console.log("도둑!!!!!!!!")
+            }
+        }
+
+        console.log(person.name);
+        console.log(person.family.mon);
+        console.log(person.hobby[0]);
+        person.comment();
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

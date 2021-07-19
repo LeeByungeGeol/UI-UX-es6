@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-화살표함수</title>
+    <script>
+        //1.일반함수
+        //1-1.매개변수가 없는경우
+        //function 함수명(){
+        //스크립트 명령어
+        //}
+
+        //1-2.매개변수 있는경우
+        // function 함수이름(매개변수){
+        //     스크립트명령어;
+        // }
+
+        //2. 선언적함수
+        //2-1 매개변수가 없는
+        //var 함수명 = function(){
+        //스크립트 명령어;
+        //}
+        //2-2 매개변수 있는 경우
+        // var 함수명 = function(매개변수){
+        //     스크립트명령어;
+        // }
+
+        //3. 화살표함수 제곱근
+        //3-1. 매개변수가 없는 경우
+        let squart = () => 5*5
+        console.log(squart());
+        //3-2. 매개변수가 한개 있는 경우
+        let squart2 = num => num*num;
+        console.log(squart2(3));
+
+        //3-3 매개변수가 한개 이상일 경우
+        let squart3 = (num,num2) => num*num2;
+        console.log(squart3(5,3));
+        /*
+        {} return을 사용해야된다.
+        */
+
+        let squart4 = (num1,num2) => {
+            return num1*num2
+        }
+        console.log(squart4(2,5));
+        
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-class를 이용한 디지털 시계</title>
+    <script>
+        //Clock class 선언하기
+        class Clock{
+            constructor(){
+            }
+            myTimer(){
+                let date = new Date();
+                //시간
+                let hours = date.getHours();
+                //분
+                let mins = date.getMinutes();
+                //초
+                let secs = date.getSeconds();
+                console.log(`${hours} : ${mins} : ${secs}`);
+            }
+            start(){
+                this.myTimer();
+                // this.tt = setInterval(function(){ this.myTimer() },1000);
+                this.tt = setInterval(() =>  this.myTimer() ,1000);
+            }
+        }
+        let myClock = new Clock();
+        myClock.start();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

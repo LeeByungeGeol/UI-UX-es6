@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-class</title>
+    <script>
+        //class 선언하기
+        class Rectangle{
+            constructor(widthA,heightA){
+                //변수
+                this.width = widthA;
+                this.height = heightA;
+            }
+            //메서드
+            calcArea(){
+                return this.width*this.height
+            }
+        }
+
+        let square = new Rectangle(10,5);
+
+        console.log(square.calcArea);//50
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

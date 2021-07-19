@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-배열</title>
+    <script>
+        //배열 선언하기
+        const [a,b,c] =[1,2,3];
+        console.log(a,b,c); //1,2,3
+
+        let data = ["coat","slacks","flat","ring"];
+
+        let [outer,,shoes] = data;
+        console.log(outer,shoes); // coat, flat
+
+        //스프레드 오퍼레이터
+        let [cc,d,...rest] = [10,20,30,40,50];
+        console.log(rest);//30,40,50
+
+        //객체 오브젝트
+
+        let obj = {k1:10,k2:"seoul",k3:[11,22,33]}
+
+        let {k1,...rest2} = obj;
+        console.log(rest2);//k2:"seoul",k3:[11,22,33]
+
+        //객체 선언
+        // var obj2 = {
+        //     aa:10,
+        //     bb:20
+        // }
+
+        // var newObj2 = {
+        //     aa:obj2.aa,
+        //     bb:obj2.bb
+        // }
+
+        // console.log(newObj2);
+
+        var obj2={
+            aa:10,
+            bb:20
+        }
+        var newObj2 = {
+            ...obj2
+        }
+        console.log(newObj2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
